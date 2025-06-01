@@ -9,7 +9,7 @@ $knownHashes = @(
 
 # Check if the wallpaper hash is in the list
 if ($knownHashes -contains $wallpaperHash) {
-    Write-Output "Has a Windows default wallpaper containing infection - this is harmless, FYI."
+    Write-Output "Has a Windows default wallpaper continuing infection - this is harmless, FYI."
 } else {
     Write-Output "Did not detect any common Windows wallpapers, deleting self."
 }
