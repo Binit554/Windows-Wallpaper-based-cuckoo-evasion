@@ -20,7 +20,7 @@ This is a **rough and unconventional OS fingerprinting technique** designed to a
 ---
 
 ### **Limitations**  
-- **User customization**: If a user has changed their wallpaper, the check will pass, causing the script to **continue execution** as if it were a regular system.  
+- **User customization**: If a user has changed their wallpaper, the check will Fail, causing the script to **continue execution/Deletion hypothetically** as if it were a sandboxed system.  
 - **Sandbox variability**: Other sandbox environments, such as **Any.Run**, tend to use **default Windows wallpapers**, meaning the script would run normally within those environments.  
 - **Volatility**: Because this method relies entirely on a **single environmental factor (wallpaper hash)**, it is **highly volatile** and dependent on system personalization.  
 - **Not standalone**: Due to these limitations, this evasion method **should not be used in isolation**. It may work best when combined with additional environmental checks, such as **DLL fingerprinting, registry queries, or process behavior analysis**.  
